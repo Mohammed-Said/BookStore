@@ -178,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1284, 626);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -192,6 +192,7 @@
             Controls.Add(pictureBox1);
             Name = "CategoriesForm";
             Text = "Categories";
+            Load += CategoriesForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
