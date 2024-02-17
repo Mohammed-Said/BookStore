@@ -22,7 +22,7 @@ namespace BookStore.User.Forms
       Random random = new Random();
       for (int i = 0; i < 10; i++)
       {
-        var book = new BookControl();
+                var book = new BookControl();
         book.BookName = "BookTitle";
         book.BookPrice = "Price $";
         book.BookImage = Image.FromFile(Path.GetFullPath($"..\\..\\..\\Images\\Book{random.Next(16)+1}.jpg"));

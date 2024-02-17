@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OneCategoryForm";
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            prevBtn = new Button();
+            nextBtn = new Button();
+            SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Location = new Point(339, 151);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(300, 150);
+            flowLayoutPanel1.TabIndex = 0;
+            // 
+            // prevBtn
+            // 
+            prevBtn.Location = new Point(56, 379);
+            prevBtn.Name = "prevBtn";
+            prevBtn.Size = new Size(112, 34);
+            prevBtn.TabIndex = 1;
+            prevBtn.Text = "button1";
+            prevBtn.UseVisualStyleBackColor = true;
+            // 
+            // nextBtn
+            // 
+            nextBtn.Location = new Point(579, 379);
+            nextBtn.Name = "nextBtn";
+            nextBtn.Size = new Size(112, 34);
+            nextBtn.TabIndex = 2;
+            nextBtn.Text = "button2";
+            nextBtn.UseVisualStyleBackColor = true;
+            // 
+            // OneCategoryForm
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(nextBtn);
+            Controls.Add(prevBtn);
+            Controls.Add(flowLayoutPanel1);
+            Name = "OneCategoryForm";
+            Text = "OneCategoryForm";
+            Load += OneCategoryForm_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Button prevBtn;
+        private Button nextBtn;
     }
 }

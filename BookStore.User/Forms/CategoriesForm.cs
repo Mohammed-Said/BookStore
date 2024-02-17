@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStore.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,38 @@ namespace BookStore.User.Forms
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CategoriesForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void code_Click(object sender, EventArgs e)
+        {
+            string selectedCategory = "code";
+            OneCategoryForm OneCategoryForm = new OneCategoryForm(selectedCategory);
+            OneCategoryForm.Show();
+        }
+
+        private void Fiction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Suspense_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Beauty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Science_Click(object sender, EventArgs e)
         {
 
         }

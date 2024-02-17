@@ -34,11 +34,11 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             label1 = new Label();
-            button6 = new Button();
-            button1 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            code = new Button();
+            Fiction = new Button();
+            Science = new Button();
+            Beauty = new Button();
+            Suspense = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -109,91 +109,96 @@
             label1.Text = "Books Category";
             label1.Click += label1_Click;
             // 
-            // button6
+            // code
             // 
-            button6.BackColor = Color.FromArgb(39, 55, 77);
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button6.ForeColor = Color.FromArgb(255, 192, 192);
-            button6.Location = new Point(99, 533);
-            button6.Name = "button6";
-            button6.Size = new Size(233, 57);
-            button6.TabIndex = 20;
-            button6.Text = "Code";
-            button6.UseVisualStyleBackColor = false;
+            code.BackColor = Color.FromArgb(39, 55, 77);
+            code.Cursor = Cursors.Hand;
+            code.FlatAppearance.BorderSize = 0;
+            code.FlatStyle = FlatStyle.Flat;
+            code.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            code.ForeColor = Color.FromArgb(255, 192, 192);
+            code.Location = new Point(99, 533);
+            code.Name = "code";
+            code.Size = new Size(233, 57);
+            code.TabIndex = 20;
+            code.Text = "Code";
+            code.UseVisualStyleBackColor = false;
+            code.Click += code_Click;
             // 
-            // button1
+            // Fiction
             // 
-            button1.BackColor = Color.FromArgb(39, 55, 77);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button1.ForeColor = Color.FromArgb(255, 192, 192);
-            button1.Location = new Point(392, 533);
-            button1.Name = "button1";
-            button1.Size = new Size(233, 57);
-            button1.TabIndex = 25;
-            button1.Text = "Fiction";
-            button1.UseVisualStyleBackColor = false;
+            Fiction.BackColor = Color.FromArgb(39, 55, 77);
+            Fiction.Cursor = Cursors.Hand;
+            Fiction.FlatAppearance.BorderSize = 0;
+            Fiction.FlatStyle = FlatStyle.Flat;
+            Fiction.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            Fiction.ForeColor = Color.FromArgb(255, 192, 192);
+            Fiction.Location = new Point(392, 533);
+            Fiction.Name = "Fiction";
+            Fiction.Size = new Size(233, 57);
+            Fiction.TabIndex = 25;
+            Fiction.Text = "Fiction";
+            Fiction.UseVisualStyleBackColor = false;
+            Fiction.Click += Fiction_Click;
             // 
-            // button3
+            // Science
             // 
-            button3.BackColor = Color.FromArgb(39, 55, 77);
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button3.ForeColor = Color.FromArgb(255, 192, 192);
-            button3.Location = new Point(1254, 533);
-            button3.Name = "button3";
-            button3.Size = new Size(233, 57);
-            button3.TabIndex = 26;
-            button3.Text = "Science";
-            button3.UseVisualStyleBackColor = false;
+            Science.BackColor = Color.FromArgb(39, 55, 77);
+            Science.Cursor = Cursors.Hand;
+            Science.FlatAppearance.BorderSize = 0;
+            Science.FlatStyle = FlatStyle.Flat;
+            Science.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            Science.ForeColor = Color.FromArgb(255, 192, 192);
+            Science.Location = new Point(1254, 533);
+            Science.Name = "Science";
+            Science.Size = new Size(233, 57);
+            Science.TabIndex = 26;
+            Science.Text = "Science";
+            Science.UseVisualStyleBackColor = false;
+            Science.Click += Science_Click;
             // 
-            // button4
+            // Beauty
             // 
-            button4.BackColor = Color.FromArgb(39, 55, 77);
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button4.ForeColor = Color.FromArgb(255, 192, 192);
-            button4.Location = new Point(963, 533);
-            button4.Name = "button4";
-            button4.Size = new Size(233, 57);
-            button4.TabIndex = 27;
-            button4.Text = "Beauty";
-            button4.UseVisualStyleBackColor = false;
+            Beauty.BackColor = Color.FromArgb(39, 55, 77);
+            Beauty.Cursor = Cursors.Hand;
+            Beauty.FlatAppearance.BorderSize = 0;
+            Beauty.FlatStyle = FlatStyle.Flat;
+            Beauty.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            Beauty.ForeColor = Color.FromArgb(255, 192, 192);
+            Beauty.Location = new Point(963, 533);
+            Beauty.Name = "Beauty";
+            Beauty.Size = new Size(233, 57);
+            Beauty.TabIndex = 27;
+            Beauty.Text = "Beauty";
+            Beauty.UseVisualStyleBackColor = false;
+            Beauty.Click += Beauty_Click;
             // 
-            // button5
+            // Suspense
             // 
-            button5.BackColor = Color.FromArgb(39, 55, 77);
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button5.ForeColor = Color.FromArgb(255, 192, 192);
-            button5.Location = new Point(676, 533);
-            button5.Name = "button5";
-            button5.Size = new Size(233, 57);
-            button5.TabIndex = 28;
-            button5.Text = "Suspense";
-            button5.UseVisualStyleBackColor = false;
+            Suspense.BackColor = Color.FromArgb(39, 55, 77);
+            Suspense.Cursor = Cursors.Hand;
+            Suspense.FlatAppearance.BorderSize = 0;
+            Suspense.FlatStyle = FlatStyle.Flat;
+            Suspense.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            Suspense.ForeColor = Color.FromArgb(255, 192, 192);
+            Suspense.Location = new Point(676, 533);
+            Suspense.Name = "Suspense";
+            Suspense.Size = new Size(233, 57);
+            Suspense.TabIndex = 28;
+            Suspense.Text = "Suspense";
+            Suspense.UseVisualStyleBackColor = false;
+            Suspense.Click += Suspense_Click;
             // 
             // CategoriesForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1603, 719);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button1);
-            Controls.Add(button6);
+            Controls.Add(Suspense);
+            Controls.Add(Beauty);
+            Controls.Add(Science);
+            Controls.Add(Fiction);
+            Controls.Add(code);
             Controls.Add(label1);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
@@ -202,6 +207,7 @@
             Controls.Add(pictureBox1);
             Name = "CategoriesForm";
             Text = "Categories";
+            Load += CategoriesForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -219,10 +225,10 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private Label label1;
-        private Button button6;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button code;
+        private Button Fiction;
+        private Button Science;
+        private Button Beauty;
+        private Button Suspense;
     }
 }
