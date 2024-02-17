@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace BookStore.User.Forms
 {
-  public partial class CategoriesForm : Form
-  {
-    public CategoriesForm()
+    public partial class CategoriesForm : Form
     {
-      InitializeComponent();
+        public CategoriesForm()
+        {
+            InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-  }
 }
