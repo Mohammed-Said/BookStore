@@ -119,7 +119,7 @@
             button2.Name = "button2";
             button2.Size = new Size(107, 32);
             button2.TabIndex = 15;
-            button2.Text = "Fantasy";
+            button2.Text = "Code";
             button2.UseVisualStyleBackColor = false;
             // 
             // button1
