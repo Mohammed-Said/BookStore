@@ -1,12 +1,16 @@
 ﻿using BookStore.Application.Contracts;
 using BookStore.Context;
+using BookStore.DTOs;
 using BookStore.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookStore.Infrastructure.Repositories
 {
@@ -18,29 +22,72 @@ namespace BookStore.Infrastructure.Repositories
             context = _bookStoreContext;
         }
 
-        public bool ChangeQuantity(CartItem cartItem, int quantity)
+        public bool ChangeQuantity(int cartItemId, int quantity)
         {
-            if (cartItem == null)
-                return false;
+
 
             // Retrieve the associated book
-            var book = context.books.FirstOrDefault(b => b.Id == cartItem.BookID);
-            if (book == null)
-                return false; 
+            var item = context.cartItems.FirstOrDefault(i => i.Id == cartItemId);
 
-            // Calculate the new quantity after adding the provided quantity
-            int newQuantity = cartItem.Quantity + quantity;
+            if (item == null)
+                return false;
 
-            // Ensure the resulting quantity is not negative and does not exceed available stock
-            if (newQuantity < 0 || newQuantity > book.Stock)
-                return false; 
-
-            // Update the quantity of the cart item
-            cartItem.Quantity = newQuantity;
+            if (quantity == 0)
+                Delete(item);
+            else
+            {
+                item.Quantity = quantity;
+                Update(item);
+            }
 
             context.SaveChanges();
 
-            return true; 
+            return true;
         }
+        public IQueryable<BookCart> GetCustomerCart(int customerId)
+        {
+            return from item in context.cartItems
+                   where item.CustomerID == customerId
+                   join book in context.books
+                   on item.BookID equals book.Id
+                   select new BookCart
+                   {
+                       BookId = book.Id,
+                       CartItemId = item.Id,
+                       Title = book.Name,
+                       Price = book.Price,
+                       Quantity = item.Quantity,
+                       Stock = book.Stock,
+                       Image = book.BookImg
+                   };
+        }
+        public void PlaceOrder(Order order)
+        {
+            //Create Order
+
+            context.orders.Add(order);
+            context.SaveChanges();
+
+            //Add Cart items into Order items
+            //Get All Customer Catr items
+            var cartItems = context.cartItems.Where(c => c.CustomerID == order.CustomerID);
+
+            foreach (var item in cartItems)
+            {
+                //Create Order item
+                OrderItem orderItem = new OrderItem();
+                orderItem.OrderID = order.Id;
+                orderItem.Quantity = item.Quantity;
+                orderItem.BookID = item.BookID;
+                context.orderItems.Add(orderItem);
+
+                //Remove CartItems
+                context.cartItems.Remove(item);
+            }
+            context.SaveChanges();
+
+
+        }
+
     }
 }

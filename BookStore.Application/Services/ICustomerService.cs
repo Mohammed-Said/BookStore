@@ -6,15 +6,15 @@ namespace BookStore.Application.Services
   {
     bool AddCustomer(Customer Customer);
     bool UpdateCustomer(Customer Customer);
-    bool DeleteCustomer(Customer Customer);
+    bool DeleteCustomer(int customerID);
     Customer GetbyId(int id);
     List<Customer> GetAllPagination(int num, int pageIndex);
     bool IsUsrNameExisit(string usrName);
     bool IsUsrEmailExisit(string usrEmail);
     bool IsUsrPhoneExisit(string phone);
-    bool IsLogin(string username, string password);
+        Customer IsLogin(string username, string password);
     void AddToCart(int bookId, int customerId, int quantity);
     List<Order> ShowOrders(int customerId);
-    List<CartItem> GetCartByCustomerId(int id);
+    bool HasItemInCart(int customerId);
   }
 }
