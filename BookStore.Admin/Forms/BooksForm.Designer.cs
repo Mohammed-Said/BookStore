@@ -52,19 +52,21 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersHeight = 34;
-            dataGridView1.Location = new Point(438, 59);
+            dataGridView1.Location = new Point(464, 93);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(568, 280);
+            dataGridView1.Size = new Size(571, 299);
             dataGridView1.TabIndex = 0;
             // 
             // getOne
             // 
-            getOne.BackColor = Color.OrangeRed;
+            getOne.BackColor = Color.FromArgb(128, 64, 0);
             getOne.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            getOne.Location = new Point(30, 428);
+            getOne.Location = new Point(11, 506);
             getOne.Margin = new Padding(2);
             getOne.Name = "getOne";
             getOne.Size = new Size(161, 40);
@@ -75,9 +77,9 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.OrangeRed;
+            addBtn.BackColor = Color.FromArgb(128, 64, 0);
             addBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(30, 364);
+            addBtn.Location = new Point(11, 396);
             addBtn.Margin = new Padding(2);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(161, 40);
@@ -88,10 +90,10 @@
             // 
             // updateBtn
             // 
-            updateBtn.BackColor = Color.OrangeRed;
+            updateBtn.BackColor = Color.FromArgb(128, 64, 0);
             updateBtn.BackgroundImageLayout = ImageLayout.None;
             updateBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            updateBtn.Location = new Point(210, 364);
+            updateBtn.Location = new Point(207, 396);
             updateBtn.Margin = new Padding(2);
             updateBtn.Name = "updateBtn";
             updateBtn.Size = new Size(161, 40);
@@ -102,9 +104,9 @@
             // 
             // button5
             // 
-            button5.BackColor = Color.OrangeRed;
+            button5.BackColor = Color.FromArgb(128, 64, 0);
             button5.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button5.Location = new Point(210, 428);
+            button5.Location = new Point(207, 506);
             button5.Margin = new Padding(2);
             button5.Name = "button5";
             button5.Size = new Size(161, 40);
@@ -118,7 +120,7 @@
             nextBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             nextBtn.BackColor = Color.SeaGreen;
             nextBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            nextBtn.Location = new Point(840, 373);
+            nextBtn.Location = new Point(890, 396);
             nextBtn.Margin = new Padding(2);
             nextBtn.Name = "nextBtn";
             nextBtn.Size = new Size(129, 31);
@@ -130,9 +132,9 @@
             // prevBtn
             // 
             prevBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            prevBtn.BackColor = Color.SaddleBrown;
+            prevBtn.BackColor = Color.FromArgb(192, 0, 0);
             prevBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            prevBtn.Location = new Point(478, 369);
+            prevBtn.Location = new Point(464, 396);
             prevBtn.Margin = new Padding(2);
             prevBtn.Name = "prevBtn";
             prevBtn.Size = new Size(129, 31);
@@ -206,28 +208,29 @@
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(textBox3);
-            panel1.Location = new Point(30, 12);
+            panel1.Location = new Point(12, 37);
             panel1.Name = "panel1";
-            panel1.Size = new Size(319, 327);
+            panel1.Size = new Size(356, 327);
             panel1.TabIndex = 15;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Snap ITC", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Snap ITC", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(617, 8);
+            label1.Location = new Point(618, 19);
             label1.Name = "label1";
-            label1.Size = new Size(215, 45);
+            label1.Size = new Size(291, 63);
             label1.TabIndex = 16;
             label1.Text = "All Books";
+            label1.Click += label1_Click;
             // 
             // BooksForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1033, 494);
+            ClientSize = new Size(1063, 557);
             Controls.Add(label1);
             Controls.Add(panel1);
             Controls.Add(prevBtn);

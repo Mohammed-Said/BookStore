@@ -29,7 +29,7 @@ namespace BookStore.Admin.Forms
             BookService = connectionBook.Resolve<IBookService>();
 
             pageNum = 1;
-            maxPageNum = BookService.GetCount(); 
+            maxPageNum = BookService.GetCount();
             ShowBooks(BookService.GetAllPagination(10, pageNum));
         }
 
@@ -125,6 +125,11 @@ namespace BookStore.Admin.Forms
         }
 
         private void BooksForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
