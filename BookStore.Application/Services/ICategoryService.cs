@@ -9,5 +9,6 @@ namespace BookStore.Application.Services
     bool DeleteCartItem(int categoryId);
     Category GetbyId(int id);
     List<Category> GetAllCategories();
-  }
+        void DeleteCategory(int id);
+    }
 }
