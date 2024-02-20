@@ -41,5 +41,10 @@ namespace BookStore.Application.Services
                 _CategoryRepository.Save();
             return isUpdated;
         }
+
+        public void DeleteCategory(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
