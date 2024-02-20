@@ -29,7 +29,7 @@ namespace BookStore.Admin.Forms
             BookService = connectionBook.Resolve<IBookService>();
 
             pageNum = 1;
-            maxPageNum = BookService.GetCount(); ;
+            maxPageNum = BookService.GetCount(); 
             ShowBooks(BookService.GetAllPagination(10, pageNum));
         }
 
@@ -74,6 +74,8 @@ namespace BookStore.Admin.Forms
             pageNum++;
             ShowBooks(BookService.GetAllPagination(10, pageNum));
         }
+
+
 
         private void addBtn_Click(object sender, EventArgs e)
         {
@@ -120,6 +122,11 @@ namespace BookStore.Admin.Forms
             int Id = int.Parse(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
             BookService.DeleteBook(Id);
             ShowBooks(BookService.GetAllPagination(10, pageNum));
+        }
+
+        private void BooksForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

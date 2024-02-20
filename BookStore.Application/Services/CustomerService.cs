@@ -77,6 +77,10 @@ namespace BookStore.Application.Services
             return _CustomerRepository.HasItemInCart(customerId);
         }
 
-       
+        public int GetCount()
+        {
+            int count = _CustomerRepository.GetAll().Count();
+            return (int)Math.Ceiling(count / 10.0);
+        }
     }
 }

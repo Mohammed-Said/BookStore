@@ -62,7 +62,17 @@ namespace BookStore.Admin.Forms
             dataGridView1.DataSource = orders;
         }
 
+        private void prevBtn(object sender, EventArgs e)
+        {
+            pageNum--;
+            ShowOrder(OrderService.GetAllPagination(10, pageNum));
+        }
 
+        private void nextBtn(object sender, EventArgs e)
+        {
+            pageNum++;
+            ShowOrder(OrderService.GetAllPagination(10, pageNum));
+        }
         private void ViewAll_Click(object sender, EventArgs e)
         {
             DataGridViewRow row = dataGridView1.Rows[dataGridView1.CurrentRow.Index];
@@ -85,5 +95,12 @@ namespace BookStore.Admin.Forms
             OrderService.DeleteOrder(Id);
             ShowOrder(OrderService.GetAllPagination(10, pageNum));
         }
+
+        private void OrdersForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

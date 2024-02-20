@@ -16,5 +16,6 @@ namespace BookStore.Application.Services
     void AddToCart(int bookId, int customerId, int quantity);
     List<Order> ShowOrders(int customerId);
     bool HasItemInCart(int customerId);
+        int GetCount();
   }
 }
