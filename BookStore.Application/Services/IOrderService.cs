@@ -8,6 +8,6 @@ namespace BookStore.Application.Services
     Order GetOrderById(int id);
     void ChangeOrderStutus (int orderId,OrderStatus status);
     List<Order> GetAllPagination(int num, int pageIndex);
-
-  }
+        void DeleteOrder(int id);
+    }
 }

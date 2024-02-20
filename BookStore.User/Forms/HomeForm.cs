@@ -13,8 +13,8 @@ namespace BookStore.User.Forms
         BooksForm booksForm;
         CartForm cartForm;
         EmptyCart emptyCart;
-
-        OrdersForm ordersForm = new OrdersForm();
+        OrderPlacedForm orderPlacedForm;
+        OrdersForm ordersForm ;
         CategoriesForm categoriesForm;
         OneCategoryForm oneCategoryForm;
         Customer customer;
@@ -33,9 +33,10 @@ namespace BookStore.User.Forms
             customer = _customer;
 
             settingForm = new SettingForm(customer , this);
-
+            orderPlacedForm = new OrderPlacedForm(this);
 
             booksForm = new BooksForm(customer.Id);
+            ordersForm = new OrdersForm(customer.Id);
             emptyCart = new EmptyCart(this);
             categoriesForm = new CategoriesForm(this);
 
@@ -110,10 +111,22 @@ namespace BookStore.User.Forms
             button2.BackColor = Color.FromArgb(157, 178, 191);
 
         }
+        public void ShowOrderPlaced()
+        {
+            OpenForm(orderPlacedForm, this);
+            button4.BackColor = Color.FromArgb(157, 178, 191);
+        }
 
+        public void UpdateProfilePicture(string profilePicPath)
+        {
+            pictureBox1.BackgroundImage = Image.FromFile(Path.GetFullPath($"..\\..\\..\\Images\\{profilePicPath}"));
+            if (!profilePicPath.Equals("profilePicture.png"))
+                pictureBox1.BackColor = Color.Transparent;
+        }
 
+        #region Events
         private void button1_Click(object sender, EventArgs e) =>
-          OpenForm(booksForm, sender);
+         OpenForm(booksForm, sender);
 
         private void button2_Click(object sender, EventArgs e) =>
           OpenForm(categoriesForm, sender);
@@ -125,7 +138,7 @@ namespace BookStore.User.Forms
         {
             if (CustomerService.HasItemInCart(customer.Id))
             {
-                cartForm = new CartForm(customer.Id, this);
+                cartForm = new CartForm(customer, this);
                 OpenForm(cartForm, sender);
             }
             else
@@ -133,10 +146,6 @@ namespace BookStore.User.Forms
             button4.BackColor = Color.FromArgb(157, 178, 191);
 
         }
-
-        //private void button4_Click(object sender, EventArgs e)=>
-        //  OpenForm(new CartForm(customer.Id, this), sender);
-
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -149,7 +158,7 @@ namespace BookStore.User.Forms
         {
             if (CustomerService.HasItemInCart(customer.Id))
             {
-                cartForm = new CartForm(customer.Id, this);
+                cartForm = new CartForm(customer, this);
                 OpenForm(cartForm, sender);
             }
             else
@@ -180,16 +189,10 @@ namespace BookStore.User.Forms
             OpenForm(SearchForm, sender);
         }
 
+        #endregion
 
-        public void UpdateProfilePicture(string profilePicPath)
-        {
-            pictureBox1.BackgroundImage = Image.FromFile(Path.GetFullPath($"..\\..\\..\\Images\\{profilePicPath}"));
-            if (!profilePicPath.Equals("profilePicture.png"))
-                pictureBox1.BackColor = Color.Transparent;
-        }
-
-
-
+        #region Rounded Button
+        //Rounded Button
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -199,7 +202,8 @@ namespace BookStore.User.Forms
                 int nBottomRect,   // y-coordinate of lower-right corner
                 int nWidthEllipse, // width of ellipse
                 int nHeightEllipse // height of ellipse
-            );
+            ); 
+        #endregion
 
     }
 
