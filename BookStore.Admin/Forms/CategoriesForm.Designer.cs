@@ -51,7 +51,7 @@
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(588, 265);
+            dataGridView1.Size = new Size(588, 248);
             dataGridView1.TabIndex = 24;
             // 
             // textBox1
@@ -70,7 +70,7 @@
             // 
             addBtn.BackColor = Color.Olive;
             addBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(11, 297);
+            addBtn.Location = new Point(11, 311);
             addBtn.Margin = new Padding(2);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(161, 40);
@@ -83,7 +83,7 @@
             // 
             updateBtn.BackColor = Color.Olive;
             updateBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            updateBtn.Location = new Point(187, 297);
+            updateBtn.Location = new Point(187, 311);
             updateBtn.Margin = new Padding(2);
             updateBtn.Name = "updateBtn";
             updateBtn.Size = new Size(161, 40);
@@ -123,9 +123,9 @@
             panel1.BackColor = SystemColors.Desktop;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(23, 53);
+            panel1.Location = new Point(12, 90);
             panel1.Name = "panel1";
-            panel1.Size = new Size(310, 191);
+            panel1.Size = new Size(336, 191);
             panel1.TabIndex = 30;
             // 
             // label1

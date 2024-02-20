@@ -50,20 +50,20 @@
             // dataGridView1
             // 
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
+            dataGridView1.BackgroundColor = Color.DarkSalmon;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(427, 56);
+            dataGridView1.Location = new Point(397, 87);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(585, 410);
+            dataGridView1.Size = new Size(729, 261);
             dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.BackColor = Color.OrangeRed;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 447);
+            button1.BackColor = Color.Olive;
+            button1.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(12, 372);
             button1.Name = "button1";
             button1.Size = new Size(142, 43);
             button1.TabIndex = 1;
@@ -73,9 +73,9 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.OrangeRed;
-            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(198, 447);
+            button2.BackColor = Color.Olive;
+            button2.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button2.Location = new Point(10, 481);
             button2.Name = "button2";
             button2.Size = new Size(144, 43);
             button2.TabIndex = 2;
@@ -126,7 +126,7 @@
             // dateTimePicker1
             // 
             dateTimePicker1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(33, 328);
+            dateTimePicker1.Location = new Point(175, 392);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(226, 23);
             dateTimePicker1.TabIndex = 7;
@@ -134,7 +134,7 @@
             // dateTimePicker2
             // 
             dateTimePicker2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dateTimePicker2.Location = new Point(33, 407);
+            dateTimePicker2.Location = new Point(175, 503);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(226, 21);
             dateTimePicker2.TabIndex = 8;
@@ -144,7 +144,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(58, 307);
+            label1.Location = new Point(219, 360);
             label1.Name = "label1";
             label1.Size = new Size(152, 18);
             label1.TabIndex = 9;
@@ -156,7 +156,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Maroon;
-            label3.Location = new Point(87, 376);
+            label3.Location = new Point(233, 471);
             label3.Name = "label3";
             label3.Size = new Size(106, 18);
             label3.TabIndex = 11;
@@ -169,19 +169,19 @@
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox4);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(26, 56);
             panel1.Name = "panel1";
-            panel1.Size = new Size(308, 292);
+            panel1.Size = new Size(327, 292);
             panel1.TabIndex = 12;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Snap ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Snap ITC", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Maroon;
-            label2.Location = new Point(594, 12);
+            label2.Location = new Point(666, 25);
             label2.Name = "label2";
-            label2.Size = new Size(150, 42);
+            label2.Size = new Size(218, 63);
             label2.TabIndex = 13;
             label2.Text = "Orders";
             // 
@@ -189,9 +189,9 @@
             // 
             button3.BackColor = Color.Maroon;
             button3.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button3.Location = new Point(446, 481);
+            button3.Location = new Point(495, 353);
             button3.Name = "button3";
-            button3.Size = new Size(143, 44);
+            button3.Size = new Size(143, 30);
             button3.TabIndex = 14;
             button3.Text = "Previous";
             button3.UseVisualStyleBackColor = false;
@@ -201,9 +201,9 @@
             // 
             button4.BackColor = Color.Green;
             button4.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button4.Location = new Point(841, 481);
+            button4.Location = new Point(918, 353);
             button4.Name = "button4";
-            button4.Size = new Size(126, 44);
+            button4.Size = new Size(126, 30);
             button4.TabIndex = 15;
             button4.Text = "Next";
             button4.UseVisualStyleBackColor = false;

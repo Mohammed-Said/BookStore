@@ -51,7 +51,7 @@
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
+            dataGridView1.BackgroundColor = Color.DarkSalmon;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersHeight = 34;
@@ -147,7 +147,7 @@
             // 
             textBox1.BackColor = SystemColors.Window;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(36, 11);
+            textBox1.Location = new Point(47, 22);
             textBox1.MaximumSize = new Size(250, 62);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -159,7 +159,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(36, 76);
+            textBox2.Location = new Point(47, 84);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Stock";
@@ -170,7 +170,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(36, 143);
+            textBox3.Location = new Point(47, 145);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Description";
@@ -181,7 +181,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(36, 205);
+            textBox4.Location = new Point(47, 203);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Price";
@@ -192,7 +192,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(36, 271);
+            textBox5.Location = new Point(47, 270);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "Image";

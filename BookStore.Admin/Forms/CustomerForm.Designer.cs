@@ -66,12 +66,15 @@
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView1.BackgroundColor = Color.DarkSalmon;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(445, 72);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(600, 396);
+            dataGridView1.Size = new Size(694, 251);
             dataGridView1.TabIndex = 0;
             // 
             // textBox2
@@ -80,61 +83,67 @@
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "First Name";
-            textBox2.Size = new Size(137, 23);
+            textBox2.Size = new Size(137, 39);
             textBox2.TabIndex = 3;
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(220, 29);
+            textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Last Name";
-            textBox3.Size = new Size(137, 23);
+            textBox3.Size = new Size(137, 37);
             textBox3.TabIndex = 4;
             textBox3.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox4
             // 
             textBox4.Location = new Point(17, 89);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Address";
-            textBox4.Size = new Size(137, 23);
+            textBox4.Size = new Size(137, 32);
             textBox4.TabIndex = 5;
             textBox4.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox5
             // 
             textBox5.Location = new Point(220, 89);
+            textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "Phone";
-            textBox5.Size = new Size(137, 23);
+            textBox5.Size = new Size(137, 32);
             textBox5.TabIndex = 6;
             textBox5.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(12, 149);
+            textBox6.Location = new Point(17, 149);
+            textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.PlaceholderText = "Password";
-            textBox6.Size = new Size(142, 23);
+            textBox6.Size = new Size(137, 35);
             textBox6.TabIndex = 7;
             textBox6.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox7
             // 
             textBox7.Location = new Point(220, 149);
+            textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.PlaceholderText = "UserName";
-            textBox7.Size = new Size(137, 23);
+            textBox7.Size = new Size(137, 35);
             textBox7.TabIndex = 8;
             textBox7.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(12, 212);
+            textBox8.Location = new Point(17, 212);
+            textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.PlaceholderText = "Email";
-            textBox8.Size = new Size(134, 23);
+            textBox8.Size = new Size(137, 34);
             textBox8.TabIndex = 9;
             textBox8.TextAlign = HorizontalAlignment.Center;
             textBox8.TextChanged += textBox8_TextChanged;
@@ -142,18 +151,20 @@
             // textBox9
             // 
             textBox9.Location = new Point(220, 212);
+            textBox9.Multiline = true;
             textBox9.Name = "textBox9";
             textBox9.PlaceholderText = "ProfilePic";
-            textBox9.Size = new Size(137, 23);
+            textBox9.Size = new Size(137, 34);
             textBox9.TabIndex = 10;
             textBox9.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox10
             // 
             textBox10.Location = new Point(17, 279);
+            textBox10.Multiline = true;
             textBox10.Name = "textBox10";
             textBox10.PlaceholderText = "Admin ";
-            textBox10.Size = new Size(129, 23);
+            textBox10.Size = new Size(137, 32);
             textBox10.TabIndex = 11;
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.TextChanged += textBox10_TextChanged;
@@ -164,7 +175,7 @@
             button1.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(24, 402);
             button1.Name = "button1";
-            button1.Size = new Size(105, 37);
+            button1.Size = new Size(134, 37);
             button1.TabIndex = 12;
             button1.Text = "Add ";
             button1.UseVisualStyleBackColor = false;
@@ -173,9 +184,10 @@
             // textBox1
             // 
             textBox1.Location = new Point(220, 279);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Customer ID";
-            textBox1.Size = new Size(137, 23);
+            textBox1.Size = new Size(137, 32);
             textBox1.TabIndex = 13;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
@@ -183,9 +195,9 @@
             // 
             button2.BackColor = Color.Olive;
             button2.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button2.Location = new Point(203, 402);
+            button2.Location = new Point(257, 402);
             button2.Name = "button2";
-            button2.Size = new Size(100, 37);
+            button2.Size = new Size(128, 37);
             button2.TabIndex = 14;
             button2.Text = "Update";
             button2.UseVisualStyleBackColor = false;
@@ -197,7 +209,7 @@
             button3.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button3.Location = new Point(24, 463);
             button3.Name = "button3";
-            button3.Size = new Size(105, 37);
+            button3.Size = new Size(134, 37);
             button3.TabIndex = 15;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
@@ -207,9 +219,9 @@
             // 
             button4.BackColor = Color.Olive;
             button4.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button4.Location = new Point(203, 463);
+            button4.Location = new Point(257, 463);
             button4.Name = "button4";
-            button4.Size = new Size(100, 37);
+            button4.Size = new Size(128, 37);
             button4.TabIndex = 16;
             button4.Text = "View";
             button4.UseVisualStyleBackColor = false;
@@ -219,9 +231,9 @@
             // 
             button5.BackColor = Color.Maroon;
             button5.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button5.Location = new Point(489, 483);
+            button5.Location = new Point(466, 339);
             button5.Name = "button5";
-            button5.Size = new Size(105, 37);
+            button5.Size = new Size(105, 29);
             button5.TabIndex = 17;
             button5.Text = "Previous";
             button5.UseVisualStyleBackColor = false;
@@ -231,9 +243,9 @@
             // 
             button6.BackColor = Color.Green;
             button6.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button6.Location = new Point(838, 483);
+            button6.Location = new Point(907, 339);
             button6.Name = "button6";
-            button6.Size = new Size(105, 37);
+            button6.Size = new Size(110, 29);
             button6.TabIndex = 18;
             button6.Text = "Next";
             button6.UseVisualStyleBackColor = false;
@@ -260,11 +272,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Snap ITC", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Snap ITC", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DarkRed;
-            label2.Location = new Point(620, 21);
+            label2.Location = new Point(613, 5);
             label2.Name = "label2";
-            label2.Size = new Size(236, 45);
+            label2.Size = new Size(320, 63);
             label2.TabIndex = 20;
             label2.Text = "Customers";
             // 
@@ -272,7 +284,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(969, 521);
+            ClientSize = new Size(1029, 521);
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(button6);
