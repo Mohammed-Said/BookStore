@@ -26,7 +26,6 @@ namespace BookStore.Admin.Forms
         {
             InitializeComponent();
             connectionOrder = AutoFag.RegisterOrder();
-            IOrderService OrderService = connectionOrder.Resolve<IOrderService>();
             OrderService = connectionOrder.Resolve<IOrderService>();
             pageNum = 1;
             //maxPageNum = OrderService.ChangeOrderStutus();

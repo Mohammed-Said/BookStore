@@ -30,7 +30,7 @@ namespace BookStore.Admin.Forms
             CustomerService = connectionCustomer.Resolve<ICustomerService>();
 
             pageNum = 1;
-            maxPageNum = CustomerService.GetCount();
+            maxPageNum = 1;
             ShowCustomers(CustomerService.GetAllPagination(10, pageNum));
         }
 
@@ -86,7 +86,7 @@ namespace BookStore.Admin.Forms
         {
             Customer Customers = new Customer()
             {
-                Id = int.Parse(textBox1.Text),
+                //Id = int.Parse(textBox1.Text),
                 FirstName = (textBox2.Text),
                 LastName = textBox3.Text,
                 Address = textBox4.Text,

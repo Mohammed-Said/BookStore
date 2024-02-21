@@ -76,15 +76,5 @@ namespace BookStore.Application.Services
             int count = _BookRepository.GetCountByCategory(name);
             return(int)Math.Ceiling(count / 10.0);
         }
-
-        public static void AddCustomer(Customer customers)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static void UpdateCustomer(Customer customers)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

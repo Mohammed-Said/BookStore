@@ -55,21 +55,19 @@
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersHeight = 34;
-            dataGridView1.Location = new Point(464, 93);
-            dataGridView1.Margin = new Padding(2);
+            dataGridView1.Location = new Point(663, 155);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(571, 299);
+            dataGridView1.Size = new Size(816, 520);
             dataGridView1.TabIndex = 0;
             // 
             // getOne
             // 
             getOne.BackColor = Color.FromArgb(128, 64, 0);
             getOne.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            getOne.Location = new Point(11, 506);
-            getOne.Margin = new Padding(2);
+            getOne.Location = new Point(16, 843);
             getOne.Name = "getOne";
-            getOne.Size = new Size(161, 40);
+            getOne.Size = new Size(230, 67);
             getOne.TabIndex = 4;
             getOne.Text = "Get One";
             getOne.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@
             // 
             addBtn.BackColor = Color.FromArgb(128, 64, 0);
             addBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(11, 396);
-            addBtn.Margin = new Padding(2);
+            addBtn.Location = new Point(16, 660);
             addBtn.Name = "addBtn";
-            addBtn.Size = new Size(161, 40);
+            addBtn.Size = new Size(230, 67);
             addBtn.TabIndex = 5;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = false;
@@ -93,10 +90,9 @@
             updateBtn.BackColor = Color.FromArgb(128, 64, 0);
             updateBtn.BackgroundImageLayout = ImageLayout.None;
             updateBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            updateBtn.Location = new Point(207, 396);
-            updateBtn.Margin = new Padding(2);
+            updateBtn.Location = new Point(296, 660);
             updateBtn.Name = "updateBtn";
-            updateBtn.Size = new Size(161, 40);
+            updateBtn.Size = new Size(230, 67);
             updateBtn.TabIndex = 6;
             updateBtn.Text = "Update";
             updateBtn.UseVisualStyleBackColor = false;
@@ -106,10 +102,9 @@
             // 
             button5.BackColor = Color.FromArgb(128, 64, 0);
             button5.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button5.Location = new Point(207, 506);
-            button5.Margin = new Padding(2);
+            button5.Location = new Point(296, 843);
             button5.Name = "button5";
-            button5.Size = new Size(161, 40);
+            button5.Size = new Size(230, 67);
             button5.TabIndex = 7;
             button5.Text = "Delete";
             button5.UseVisualStyleBackColor = false;
@@ -120,10 +115,9 @@
             nextBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             nextBtn.BackColor = Color.SeaGreen;
             nextBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            nextBtn.Location = new Point(890, 396);
-            nextBtn.Margin = new Padding(2);
+            nextBtn.Location = new Point(1295, 701);
             nextBtn.Name = "nextBtn";
-            nextBtn.Size = new Size(129, 31);
+            nextBtn.Size = new Size(184, 52);
             nextBtn.TabIndex = 8;
             nextBtn.Text = "Next";
             nextBtn.UseVisualStyleBackColor = false;
@@ -134,10 +128,9 @@
             prevBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             prevBtn.BackColor = Color.FromArgb(192, 0, 0);
             prevBtn.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            prevBtn.Location = new Point(464, 396);
-            prevBtn.Margin = new Padding(2);
+            prevBtn.Location = new Point(663, 701);
             prevBtn.Name = "prevBtn";
-            prevBtn.Size = new Size(129, 31);
+            prevBtn.Size = new Size(184, 52);
             prevBtn.TabIndex = 9;
             prevBtn.Text = "Previous";
             prevBtn.UseVisualStyleBackColor = false;
@@ -147,56 +140,61 @@
             // 
             textBox1.BackColor = SystemColors.Window;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(47, 22);
-            textBox1.MaximumSize = new Size(250, 62);
+            textBox1.Location = new Point(67, 37);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.MaximumSize = new Size(355, 101);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Book Name";
-            textBox1.Size = new Size(250, 34);
+            textBox1.Size = new Size(355, 54);
             textBox1.TabIndex = 10;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(47, 84);
+            textBox2.Location = new Point(67, 140);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Stock";
-            textBox2.Size = new Size(250, 34);
+            textBox2.Size = new Size(355, 54);
             textBox2.TabIndex = 11;
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(47, 145);
+            textBox3.Location = new Point(67, 242);
+            textBox3.Margin = new Padding(4, 5, 4, 5);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Description";
-            textBox3.Size = new Size(250, 34);
+            textBox3.Size = new Size(355, 54);
             textBox3.TabIndex = 12;
             textBox3.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(47, 203);
+            textBox4.Location = new Point(67, 338);
+            textBox4.Margin = new Padding(4, 5, 4, 5);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Price";
-            textBox4.Size = new Size(250, 34);
+            textBox4.Size = new Size(355, 54);
             textBox4.TabIndex = 13;
             textBox4.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(47, 270);
+            textBox5.Location = new Point(67, 450);
+            textBox5.Margin = new Padding(4, 5, 4, 5);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "Image";
-            textBox5.Size = new Size(250, 34);
+            textBox5.Size = new Size(355, 54);
             textBox5.TabIndex = 14;
             textBox5.TextAlign = HorizontalAlignment.Center;
             // 
@@ -208,9 +206,10 @@
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(textBox3);
-            panel1.Location = new Point(12, 37);
+            panel1.Location = new Point(17, 62);
+            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(356, 327);
+            panel1.Size = new Size(509, 545);
             panel1.TabIndex = 15;
             // 
             // label1
@@ -218,19 +217,20 @@
             label1.AutoSize = true;
             label1.Font = new Font("Snap ITC", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(618, 19);
+            label1.Location = new Point(883, 32);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(291, 63);
+            label1.Size = new Size(430, 93);
             label1.TabIndex = 16;
             label1.Text = "All Books";
             label1.Click += label1_Click;
             // 
             // BooksForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1063, 557);
+            ClientSize = new Size(1519, 928);
             Controls.Add(label1);
             Controls.Add(panel1);
             Controls.Add(prevBtn);
@@ -240,7 +240,6 @@
             Controls.Add(addBtn);
             Controls.Add(getOne);
             Controls.Add(dataGridView1);
-            Margin = new Padding(2);
             Name = "BooksForm";
             Text = "Books";
             Load += BooksForm_Load;

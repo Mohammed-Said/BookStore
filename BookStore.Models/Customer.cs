@@ -38,7 +38,7 @@ namespace BookStore.Models
         public List<CartItem>? CartItems { get; set; }
 
 
-     
+
 
     }
 }
